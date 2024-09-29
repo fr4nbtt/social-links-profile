@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+
+  --font-size-p: 14px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 600;
+  --font-weight-bold: 700;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: var(--font-weight-normal);
+  color: var(--white);
+  height: 100vh;
+  background: var(--grey-900);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Profile Card */
+
+.profile-card {
+  background: var(--grey-800);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2.1rem;
+  width: 320px;
+  height: 510px;
+  border-radius: 10px;
+}
+
+.profile-card .profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-bottom: 0.4rem;
+  text-align: center;
+}
+
+.profile-header .profile-picture,
+.profile-header .profile-name,
+.profile-header .profile-location,
+.profile-header .profile-bio {
+  margin: 0;
+}
+
+.profile-header .profile-name {
+  font-weight: var(--font-weight-medium);
+  font-size: 1.275rem;
+  margin-top: 0.5rem;
+}
+
+.profile-location,
+.social-links-list li a {
+  font-weight: var(--font-weight-bold);
+}
+
+.profile-header .profile-picture {
+  width: 75px;
+  height: auto;
+  border-radius: 50%;
+  margin: 1.25rem 0 0.5rem;
+}
+
+.profile-header .profile-location {
+  color: var(--green);
+  font-size: 0.75rem;
+}
+
+.profile-header .profile-bio {
+  font-size: 0.7rem;
+  margin-top: 1rem;
+}
+
+.social-links {
+  width: 100%;
+  padding: 0;
+}
+
+.social-links a {
+  background: var(--grey-700);
+  text-decoration: none;
+  text-align: center;
+  color: var(--white);
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 0;
+  border-radius: 8px;
+}
+
+.social-links-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+  padding: 0;
+}
+
+.social-links-list li {
+  width: 100%;
+}
+
+.social-links-list li a {
+  padding: 0.75rem 0;
+  font-size: 0.7rem;
+}
+
+.social-links-list li a:hover {
+  background: var(--green);
+  color: var(--grey-800);
+}
+
+/* Attribution */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-weight: 700;
+}
+
+.attribution a:hover {
+  font-weight: 800;
+  text-decoration: underline;
+}
